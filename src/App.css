@@ -1,38 +1,204 @@
-.App {
-  text-align: center;
+body {
+  box-sizing: border-box;
+}
+.box-1 {
+  background-color: #38b6ff;
+  height: 100%;
+  width: 390px;
+  /* padding: 0 10px 20px 30px; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.header-box {
+  width: 100%;
+  height: 440px;
+  background-color: #0097b2;
+  margin-left: 50px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  margin-top: 30px;
+  padding-right: 0;
+  padding: 50px 20px 20px 35px;
+}
+.header-box h2 {
+  margin-top: -40px;
+  font-weight: 700;
+  font-size: 50px;
+}
+.header-box h1 {
+  font-size: 50px;
+}
+.icon {
+  float: left;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #363636;
+}
+.phone {
+  margin-top: 10px;
+}
+.phone .data {
+  font-size:16px;
+  width: 80%;
+}
+.phone {
+  display: flex;
+  align-items: center;
+}
+.education {
+  margin-top: 60px;
+}
+.content-left {
+  color: white;
+
+}
+.content-left p {
+  margin-left: 20px;
+  font-size: 16px;
+  margin-top: -5px;
+}
+.skills,.language {
+  margin-top: 30px;
+}
+.content-skill {
+  width: 100%;
+  padding: 0 10px 20px 30px;;
+}
+.img-resume {
+  width: 20%;
+  height: 200px;
+  overflow-y: hidden;
+
+  
+}
+.img-resume {
+  width: 250px;
+  height:400px;
+  float: right;
+  margin-top: 40px;
+  
+}
+.experience {
+  margin-top: 40px;
+}
+.box-about {
+  width: 100%;
+  height: 70px;
+  background-color: #e7e8e6;
+  float: right;
+  text-transform: uppercase;
+  color: #292d2d;
+  font-size: 40px;
+  padding: 5px 10px 5px 20px;
+  font-weight: 600;
+}
+.about p{
+  font-size: 20px ;
+  margin: 20px 5px 0 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.experience .box-experience {
+  width: 121.3%;
+  height: 70px;
+  background-color: #e7e8e6;
+  float: right;
+  text-transform: uppercase;
+  color: #292d2d;
+  font-size: 40px;
+  padding: 5px 10px 5px 20px;
+  font-weight: 600;
+}
+.content-experience-1 {
+  margin-top: 100px;
+  border-left: #0097b2 solid 2px;
+  padding-left: 30px;
+  margin-left: -100px;
+}
+.content-experience-2 {
+  margin-top: 50px;
+  border-left: #0097b2 solid 2px;
+  padding-left: 30px;
+  margin-left: -100px;
+}
+.box-certifications {
+  width: 121.3%;
+  height: 70px;
+  background-color: #e7e8e6;
+  float: right;
+  text-transform: uppercase;
+  color: #292d2d;
+  font-size: 40px;
+  padding: 5px 10px 5px 20px;
+  font-weight: 600;
+}
+.certifications h3 {
+  margin-left: -100px;
+  margin-top: 90px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 576px) {
+  .certifications .box-certifications{
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .certifications {
+    margin-bottom: 40px;
+    margin-top: 30px;
   }
+  .certifications h3 {
+    margin-left: 0;
+    text-align: center;
+  }
+  .experience .box-experience {
+    width: 100%;
+    margin-left: 0;
+  }
+  .experience .content-experience-1 , .experience .content-experience-2{
+    margin-left: 0;
+  }
+  .about p {
+    text-align: center;
+    margin: 90px 10px 10px 10px;
+  }
+  .box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-1 {
+    width: 100%;
+  }
+  .header-box {
+    padding-top: 40px;
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .header-box h2 , .header-box h1 ,.header-box p{
+    text-align: center;
+  }
+  .phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+  .phone .icon {
+    margin-right: 30px;
+    
+  }
+  .data .Title {
+    float: left;
+    margin-right: 10px;
+  }
+  .contact {
+    margin-top: 50px;
+  }
+  
 }
